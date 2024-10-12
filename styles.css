@@ -249,6 +249,10 @@ footer {
 	background:#ccc;	
 }
 
+.modaal-container p{
+	max-width:90%;
+}
+
 .modaal-close:focus:after,
 .modaal-close:focus:before,
 .modaal-close:hover:after,

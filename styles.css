@@ -226,7 +226,7 @@ footer {
     margin-bottom: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .header {
         flex-direction: column;
         height: auto;
@@ -259,5 +259,39 @@ footer {
 
     .grid-container {
         grid-template-columns: 1fr;
+    }
+}
+
+/* タブレット向けの追加スタイル */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mobile-nav {
+        padding: 15px 0;
+    }
+
+    .mobile-nav .nav-item {
+        font-size: 1em;
+    }
+
+    .mobile-nav .material-icons {
+        font-size: 28px;
+    }
+
+    body {
+        padding-bottom: 70px;
+    }
+}
+
+/* デスクトップ向けのスタイル調整 */
+@media (min-width: 1025px) {
+    .desktop-nav {
+        display: flex;
+    }
+
+    .desktop-nav ul {
+        justify-content: flex-end;
+    }
+
+    .desktop-nav li {
+        margin-left: 30px;
     }
 }

@@ -227,6 +227,40 @@ footer {
     font-size: 0.8em;
     transition: color 0.3s ease;
 }
+/* 言語選択用モーダル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: var(--bg-color);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.lang-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .mobile-nav .nav-item:hover,
 .mobile-nav .nav-item:active {
@@ -249,7 +283,7 @@ footer {
 	background:#ccc;	
 }
 
-.modaal-container p{
+.modaal-container img{
 	max-width:90%;
 }
 

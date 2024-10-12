@@ -78,3 +78,26 @@ $(window).on('load resize', function() {
 $(window).scroll(function() {
     getCurrentPosition();
 });
+
+const modal = document.getElementById('languageModal');
+const modalToggle = document.getElementById('languageModalToggle');
+
+modalToggle.onclick = function(e) {
+    e.preventDefault();
+    modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.onclick = function() {
+        const lang = this.getAttribute('data-lang');
+        console.log('Language changed to:', lang);
+        // ここで実際の言語切り替え処理を行う
+        modal.style.display = "none";
+    }
+});

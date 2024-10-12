@@ -170,23 +170,33 @@
         <p>Contact: <a href="mailto:haoping0305@outlook.jp">haoping0305@outlook.jp</a></p>
     </footer>
 
-    <nav class="mobile-nav">
-        
-         <a href="#" class="nav-item">
-            <i class="material-icons">description</i>
-            <span>CV</span>
-        </a>
-       
-        <a href="#area-2" class="nav-item">
-            <i class="material-icons">work</i>
-            <span>プロダクト</span>
-        </a>
-        
-        <a href="#area-1" class="nav-item">
-            <i class="material-icons">person</i>
-            <span>経歴・スキル</span>
-        </a>
-    </nav>
+   <nav class="mobile-nav">
+    <a href="#area-1" class="nav-item">
+        <i class="material-icons">person</i>
+        <span>経歴・スキル</span>
+    </a>
+    <a href="#area-2" class="nav-item">
+        <i class="material-icons">work</i>
+        <span>プロダクト</span>
+    </a>
+    <a href="#" class="nav-item">
+        <i class="material-icons">description</i>
+        <span>CV</span>
+    </a>
+    <a href="#" class="nav-item" id="languageModalToggle">
+        <i class="material-icons">language</i>
+        <span>言語</span>
+    </a>
+</nav>
+
+<div id="languageModal" class="modal">
+    <div class="modal-content">
+        <h2>言語を選択</h2>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="zh">简体中文</button>
+        <button class="lang-btn" data-lang="en">English</button>
+    </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
